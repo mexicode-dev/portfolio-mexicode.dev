@@ -1,0 +1,23 @@
+# Build output
+dist/
+build/
+
+# Node modules
+node_modules/
+
+# SASS/SCSS maps
+*.css.map
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs & swap files
+*.log
+*.tmp
+*.swp
+*.swo

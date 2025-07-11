@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- shortcut icon tutaj -->
+    <title>Portfolio V2</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link"><span>01</span>About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link"
+              ><span>02</span>Projects</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#stack" class="navigation__link"><span>03</span>Stack</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#learning" class="navigation__link"
+              ><span>04</span>Learning</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#contact" class="navigation__link"
+              ><span>05</span>Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__logo-box">
+        <img
+          src="img/logo-mexicode.png"
+          alt="mexicode.dev logo"
+          class="header__logo"
+        />
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">mexicode.dev</span>
+          <span class="heading-primary--sub"> Clean code | Clear purpose</span>
+        </h1>
+        <a href="#popup" class="btn btn--white btn--animated">My projects</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about" id="about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">We build more than just websites</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              💻 Modern websites and web applications
+            </h3>
+            <p class="paragraph">
+              Responsive, fast and user-focused. From landing pages to
+              full-scale web apps – we design and develop with purpose and
+              performance in mind.
+            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              📱 Mobile apps that work
+            </h3>
+            <p class="paragraph">
+              We create mobile applications for Android and iOS using
+              cross-platform technologies like React Native – one codebase,
+              every device.
+            </p>
+            <a href="#contact" class="btn-text">Let’s build your project →</a>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/hero-websites.jpg"
+                alt="Modern websites"
+                class="composition__photo composition__photo--p1"
+              /><img
+                src="img/hero-webapp.jpg"
+                alt="Web applications"
+                class="composition__photo composition__photo--p2"
+              /><img
+                src="img/hero-mobile.jpg"
+                alt="Mobile applications for Android and iOS"
+                class="composition__photo composition__photo--p3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img
+                class="feature-box__icon icon-basic-world"
+                src="img/feature-custom.png"
+                alt="Custom web design icon"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Custom Web Design
+              </h3>
+              <p class="feature-box__text">
+                We create unique websites tailored to your brand. Clear, fast,
+                and beautifully responsive on all screens.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img
+                class="feature-box__icon icon-basic-world"
+                src="img/feature-fullstack.png"
+                alt="Fullstack development icon"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Full App Development
+              </h3>
+              <p class="feature-box__text">
+                From database to interface — we build complete apps using
+                modern, secure technologies, ready to scale.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img
+                class="feature-box__icon icon-basic-world"
+                src="img/feature-mobilefirst.png"
+                alt="Mobile-first approach icon"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Mobile-First Approach
+              </h3>
+              <p class="feature-box__text">
+                Every project is designed for mobile users first. Because
+                performance and usability start in your hand.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img
+                class="feature-box__icon icon-basic-world"
+                src="img/feature-strategic.png"
+                alt="Expert guidance icon"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Expert Guidance
+              </h3>
+              <p class="feature-box__text">
+                Not sure where to start? We advise you at every step — from
+                concept to final launch, you're not alone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEKCJA KARTY -->
+      <section class="section-project" id="projects">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Projects that Solve Real Problems</h2>
+        </div>
+        <div class="row">
+          <!-- CARD 1 – DriveConnect -->
+          <div class="col-1-of-3">
+            <div class="card">
+              <!-- Front side -->
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >Drive<br />Connect</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Real-time tracking</li>
+                    <li>Admin dashboard</li>
+                    <li>RESTful API</li>
+                    <li>Node.js + Express</li>
+                    <li>MongoDB database</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Back side -->
+              <div class="card__side card__side--back card__side--back-1">
+                <img
+                  src="img/sticker-fullstack.png"
+                  alt="Fullstack project badge"
+                  class="card__sticker"
+                />
+                <img
+                  src="img/logo-driveconnect.png"
+                  alt="DriveConnect app logo"
+                  class="card__logo"
+                />
+                <div class="card__cta">
+                  <a href="#popup" class="btn btn--white">Look at Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 – MyGarden -->
+          <div class="col-1-of-3">
+            <div class="card">
+              <!-- Front side -->
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >My<br />Garden</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Task management</li>
+                    <li>Responsive UI</li>
+                    <li>Custom components</li>
+                    <li>React + TypeScript</li>
+                    <li>CSS Grid + Flexbox</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Back side -->
+              <div class="card__side card__side--back card__side--back-2">
+                <img
+                  src="img/sticker-frontend.png"
+                  alt="Frontend project badge"
+                  class="card__sticker"
+                />
+                <img
+                  src="img/logo-mygarden.png"
+                  alt="MyGarden app logo"
+                  class="card__logo"
+                />
+                <div class="card__cta">
+                  <a href="#" class="btn btn--white">Look at Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 – ScandiTravel -->
+          <div class="col-1-of-3">
+            <div class="card">
+              <!-- Front side -->
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >Scandi<br />Travel</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Destination finder</li>
+                    <li>Image recognition</li>
+                    <li>Personalized recommendations</li>
+                    <li>Python + Flask</li>
+                    <li>OpenAI API</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Back side -->
+              <div class="card__side card__side--back card__side--back-3">
+                <img
+                  src="img/sticker-ai.png"
+                  alt="AI-powered project badge"
+                  class="card__sticker"
+                />
+                <img
+                  src="img/logo-scanditravel.png"
+                  alt="ScandiTravel app logo"
+                  class="card__logo"
+                />
+                <div class="card__cta">
+                  <a href="#" class="btn btn--white">Look at Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--green">Go to Github</a>
+        </div>
+      </section>
+
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/source-video.mp4" type="video/mp4" />
+            Your browser is not supported!
+          </video>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">What Our Clients Say</h2>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/testimonial-lupin.png"
+                alt="Arsène Lupin testimonial"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Arsène Lupin</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Exceptional Collaboration and Quality
+              </h3>
+              <p>
+                Working with mexicode.dev was a game-changer for our business.
+                Their team understood our needs, communicated clearly, and
+                delivered a modern, beautiful website ahead of schedule. The
+                attention to detail and support at every stage made the process
+                smooth and stress-free.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/testimonial-marina.png"
+                alt="Marina Lee testimonial"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Marina Lee</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                From Concept to Reality — True Professionals
+              </h3>
+              <p>
+                The mexicode.dev studio transformed our vision into a fully
+                functioning web app. Their creative approach, technical
+                expertise, and transparent workflow set them apart from other
+                developers we’ve worked with. We’d recommend them to anyone
+                looking for a reliable tech partner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-book" id="contact">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Contact with me!</h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+                <div class="form__group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Text message"
+                    class="form__input form__text"
+                    required
+                  ></textarea>
+                  <label for="message" class="form__label">Text message</label>
+                </div>
+                <div class="form__group u-margin-bottom-medium">
+                  <button class="btn btn--green" type="submit">
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Social icons (left) -->
+        <div class="footer__socials">
+          <a
+            href="https://linkedin.com/in/yourLinkedin"
+            class="footer__icon"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="img/icon-linkedin.svg"
+              alt="LinkedIn logo"
+              class="footer__img"
+            />
+          </a>
+          <a
+            href="https://github.com/mexicode-dev"
+            class="footer__icon"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <img
+              src="img/icon-github.svg"
+              alt="GitHub logo"
+              class="footer__img"
+            />
+          </a>
+          <a
+            href="https://facebook.com/yourFacebook"
+            class="footer__icon"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <img
+              src="img/icon-facebook.svg"
+              alt="Facebook logo"
+              class="footer__img"
+            />
+          </a>
+          <a
+            href="https://instagram.com/yourInstagram"
+            class="footer__icon"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <img
+              src="img/icon-instagram.svg"
+              alt="Instagram logo"
+              class="footer__img"
+            />
+          </a>
+        </div>
+
+        <!-- Center: logo -->
+        <div class="footer__logo">
+          <img src="img/logo-mexicode.png" alt="mexicode.dev logo" />
+        </div>
+
+        <!-- Right: copyright and claim -->
+        <div class="footer__info">
+          <span class="footer__year"
+            >© <span id="footer-year"></span> mexicode.dev</span
+          >
+          <span class="footer__claim"
+            >Full-stack solutions for real-world challenges</span
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+            alt="Dashboard example"
+            class="popup__img"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+            alt="Dashboard preview"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#projects" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            DriveConnect App
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Dashboard Preview
+          </h3>
+          <p class="popup__text">
+            Discover the modern dashboard for DriveConnect — a powerful app for
+            managing driver schedules, tracking learning progress, and ensuring
+            seamless communication between instructors and students.<br /><br />
+            Built as a full-stack solution using React, Node.js, and MongoDB.
+            Experience intuitive UX, clear statistics, and responsive design.
+            <br />Click below to explore the live demo!
+          </p>
+          <div class="popup__buttons">
+            <a href="#" class="btn btn--green">View on GitHub</a>
+            <a href="#" class="btn btn--green">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
