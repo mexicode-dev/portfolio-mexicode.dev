@@ -12,8 +12,11 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
-    <!-- shortcut icon tutaj -->
-    <title>Portfolio V2</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>
+      mexicode.dev – Modern Web Solutions & Portfolio | Clean Code, Clear
+      Purpose
+    </title>
   </head>
   <body>
     <div class="navigation">
@@ -28,16 +31,18 @@
             <a href="#about" class="navigation__link"><span>01</span>About</a>
           </li>
           <li class="navigation__item">
-            <a href="#projects" class="navigation__link"
-              ><span>02</span>Projects</a
+            <a href="#features" class="navigation__link"
+              ><span>02</span>Features</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#stack" class="navigation__link"><span>03</span>Stack</a>
+            <a href="#projects" class="navigation__link"
+              ><span>03</span>Projects</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#learning" class="navigation__link"
-              ><span>04</span>Learning</a
+            <a href="#testimonials" class="navigation__link"
+              ><span>04</span>Testimonials</a
             >
           </li>
           <li class="navigation__item">
@@ -62,12 +67,34 @@
           <span class="heading-primary--main">mexicode.dev</span>
           <span class="heading-primary--sub"> Clean code | Clear purpose</span>
         </h1>
-        <a href="#popup" class="btn btn--white btn--animated">My projects</a>
+        <a href="#projects" class="btn btn--white btn--animated">My projects</a>
       </div>
     </header>
 
     <main>
-      <section class="section-about" id="about">
+      <section class="about-me-section" id="about">
+        <div class="about-me__container">
+          <div class="about-me__left">
+            <div class="about-me__photo-wrapper">
+              <img
+                src="img/foto-kamil.jpg"
+                alt="Kamil Gałązka"
+                class="about-me__photo"
+              />
+            </div>
+          </div>
+          <div class="about-me__right">
+            <h2 class="heading-secondary">Hi, I'm Kamil!</h2>
+            <p>
+              I create useful web applications focused on real user needs.<br />
+              My goal is to build solutions that help and stand out with modern
+              design.<br />
+              <span class="about-me__tags">#mexicode.dev #webdevelopment</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">We build more than just websites</h2>
         </div>
@@ -111,7 +138,7 @@
           </div>
         </div>
       </section>
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -223,7 +250,9 @@
                   class="card__logo"
                 />
                 <div class="card__cta">
-                  <a href="#popup" class="btn btn--white">Look at Demo</a>
+                  <a href="#popup-driveconnect" class="btn btn--white"
+                    >Look at Demo</a
+                  >
                 </div>
               </div>
             </div>
@@ -263,7 +292,9 @@
                   class="card__logo"
                 />
                 <div class="card__cta">
-                  <a href="#" class="btn btn--white">Look at Demo</a>
+                  <a href="#popup-mygarden" class="btn btn--white"
+                    >Look at Demo</a
+                  >
                 </div>
               </div>
             </div>
@@ -303,18 +334,25 @@
                   class="card__logo"
                 />
                 <div class="card__cta">
-                  <a href="#" class="btn btn--white">Look at Demo</a>
+                  <a href="#popup-scanditravel" class="btn btn--white"
+                    >Look at Demo</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">Go to Github</a>
+          <a
+            href="https://github.com/mexicode-dev"
+            class="btn btn--green"
+            target="_blank"
+            >Go to Github</a
+          >
         </div>
       </section>
 
-      <section class="section-stories">
+      <section class="section-stories" id="testimonials">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="img/source-video.mp4" type="video/mp4" />
@@ -429,7 +467,7 @@
         <!-- Social icons (left) -->
         <div class="footer__socials">
           <a
-            href="https://linkedin.com/in/yourLinkedin"
+            href="https://www.linkedin.com/in/kamil-galazka/"
             class="footer__icon"
             target="_blank"
             aria-label="LinkedIn"
@@ -453,7 +491,7 @@
             />
           </a>
           <a
-            href="https://facebook.com/yourFacebook"
+            href="https://www.facebook.com/mexicode.dev"
             class="footer__icon"
             target="_blank"
             aria-label="Facebook"
@@ -465,7 +503,7 @@
             />
           </a>
           <a
-            href="https://instagram.com/yourInstagram"
+            href="https://www.instagram.com/mexicode.dev/"
             class="footer__icon"
             target="_blank"
             aria-label="Instagram"
@@ -494,17 +532,18 @@
         </div>
       </div>
     </footer>
-    <div class="popup" id="popup">
+    <!-- POPUP 1: DriveConnect -->
+    <div class="popup" id="popup-driveconnect">
       <div class="popup__content">
         <div class="popup__left">
           <img
-            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
-            alt="Dashboard example"
+            src="img/driveconnect-demo-1.jpg"
+            alt="DriveConnect dashboard"
             class="popup__img"
           />
           <img
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
-            alt="Dashboard preview"
+            src="img/driveconnect-demo-2.jpg"
+            alt="DriveConnect preview"
             class="popup__img"
           />
         </div>
@@ -517,24 +556,132 @@
             Dashboard Preview
           </h3>
           <p class="popup__text">
-            Discover the modern dashboard for DriveConnect — a powerful app for
-            managing driver schedules, tracking learning progress, and ensuring
-            seamless communication between instructors and students.<br /><br />
-            Built as a full-stack solution using React, Node.js, and MongoDB.
-            Experience intuitive UX, clear statistics, and responsive design.
-            <br />Click below to explore the live demo!
+            Modern dashboard for instructors and students. Real-time schedule,
+            learning progress, and communication.<br /><br />
+            Built as a full-stack app (React, Node.js, MongoDB).
           </p>
           <div class="popup__buttons">
-            <a href="#" class="btn btn--green">View on GitHub</a>
-            <a href="#" class="btn btn--green">Live Demo</a>
+            <a
+              href="https://github.com/twoj-github"
+              class="btn btn--green"
+              target="_blank"
+              >View on GitHub</a
+            >
+            <a
+              href="https://twoj-demo.com"
+              class="btn btn--green"
+              target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP 2: MyGarden -->
+    <div class="popup" id="popup-mygarden">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="img/mygarden-demo-1.jpg"
+            alt="MyGarden dashboard"
+            class="popup__img"
+          />
+          <img
+            src="img/mygarden-demo-2.jpg"
+            alt="MyGarden preview"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#projects" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">MyGarden App</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Dashboard Preview
+          </h3>
+          <p class="popup__text">
+            Manage your gardening tasks, plant collection and schedule care
+            routines. Responsive, intuitive UI.<br /><br />
+            Built with React, TypeScript, CSS Grid.
+          </p>
+          <div class="popup__buttons">
+            <a
+              href="https://github.com/twoj-github"
+              class="btn btn--green"
+              target="_blank"
+              >View on GitHub</a
+            >
+            <a
+              href="https://twoj-demo.com"
+              class="btn btn--green"
+              target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP 3: ScandiTravel -->
+    <div class="popup" id="popup-scanditravel">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="img/scanditravel-demo-1.jpg"
+            alt="ScandiTravel dashboard"
+            class="popup__img"
+          />
+          <img
+            src="img/scanditravel-demo-2.jpg"
+            alt="ScandiTravel preview"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#projects" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            ScandiTravel App
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            AI Travel Assistant
+          </h3>
+          <p class="popup__text">
+            Discover destinations with AI recommendations and photo recognition.
+            Personalized travel experience.<br /><br />
+            Built with Python, Flask, OpenAI API.
+          </p>
+          <div class="popup__buttons">
+            <a
+              href="https://github.com/twoj-github"
+              class="btn btn--green"
+              target="_blank"
+              >View on GitHub</a
+            >
+            <a
+              href="https://twoj-demo.com"
+              class="btn btn--green"
+              target="_blank"
+              >Live Demo</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <script>
+      // Aktualizacja roku w stopce
       document.getElementById("footer-year").textContent =
         new Date().getFullYear();
+
+      // Zamykanie hamburgera po kliknięciu w link
+      const navLinks = document.querySelectorAll(".navigation__link");
+      const navCheckbox = document.getElementById("navi-toggle");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navCheckbox.checked = false;
+        });
+      });
     </script>
   </body>
 </html>
